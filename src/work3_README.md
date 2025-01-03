@@ -61,29 +61,29 @@
 
 ##### 	商品表（goods）的增删改查
 
-![image-20250103012154115](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103012154115.png)
+![image-20250103012154115](\\pic\image-20250103012154115.png)
 
-![image-20250103012239814](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103012239814.png)
+![image-20250103012239814](\\pic\image-20250103012239814.png)
 
 
 
 ##### 	订单表（orders）的增删改查
 
-![image-20250103012902456](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103012902456.png)
+![image-20250103012902456](\\pic\image-20250103012902456.png)
 
-![image-20250103013004396](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103013004396.png)
+![image-20250103013004396](\\pic\image-20250103013004396.png)
 
-![image-20250103013029592](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103013029592.png)
+![image-20250103013029592](\\pic\image-20250103013029592.png)
 
 
 
 ##### 	订单细节表（order_details）的增删查
 
-![image-20250103013054909](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103013054909.png)
+![image-20250103013054909](\\pic\image-20250103013054909.png)
 
-![image-20250103013127327](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103013127327.png)
+![image-20250103013127327](\\pic\image-20250103013127327.png)
 
-![image-20250103013142947](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103013142947.png)
+![image-20250103013142947](\\pic\image-20250103013142947.png)
 
 ### 4.处理数据库连接	
 
@@ -116,7 +116,7 @@ String userPwd="123456";
 
 ##### 实现：
 
-![image-20250103013342444](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103013342444.png)
+![image-20250103013342444](\\pic\image-20250103013342444.png)
 
 ### 5.sql注入问题
 
@@ -162,7 +162,17 @@ connection.rollback();//回滚
 
 针对原订单表里对应订单价格是否需要更改，我觉得这个操作可以在主函数内执行，再对订单进行更新价格。或者也可以在那个方法内再执行订单更新方法，放入对应的参数去执行。不过我这里选择前者。
 
-### 10.待改进
+### 10.将图片插入markdown后上传github
+
+（之前不清楚如果将markdown里的图传上来，传上去后一直是乱码。）
+
+**获取图片在仓库中的路径**
+
+- 假设你把图片放在了`images`文件夹下，名为`image.jpg`，在仓库中的相对路径就是`images/image.jpg`
+
+- 使用相对路径来插入图片，语法为`![图片描述](images/image.jpg)`。
+
+### 11.待改进
 
 ##### 1.减少连接数据库的次数：
 
