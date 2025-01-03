@@ -61,29 +61,29 @@
 
 ##### 	商品表（goods）的增删改查
 
-![image-20250103012154115](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103012154115.png)
+![image-20250103012154115](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103012154115.png)
 
-![image-20250103012239814](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103012239814.png)
+![image-20250103012239814](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103012239814.png)
 
 
 
 ##### 	订单表（orders）的增删改查
 
-![image-20250103012902456](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103012902456.png)
+![image-20250103012902456](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103012902456.png)
 
 ![image-20250103013004396](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103013004396.png)
 
-![image-20250103013029592](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103013029592.png)
+![image-20250103013029592](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103013029592.png)
 
 
 
 ##### 	订单细节表（order_details）的增删查
 
-![image-20250103013054909](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103013054909.png)
+![image-20250103013054909](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103013054909.png)
 
-![image-20250103013127327](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103013127327.png)
+![image-20250103013127327](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103013127327.png)
 
-![image-20250103013142947](C:\Users\86180\IdeaProjects\Work3\src\pic\image-20250103013142947.png)
+![image-20250103013142947](C:\Users\86180\IdeaProjects\Work3\src\\pic\image-20250103013142947.png)
 
 ### 4.处理数据库连接	
 
