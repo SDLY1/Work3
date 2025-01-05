@@ -256,7 +256,7 @@ public class DatabaseOperation {
         //关闭自动提交
         connection.setAutoCommit(false);
         // 这里的sql语句可以直接拼接成最终的sql语句，也可以把参数用？占位符代替，等会再传入。
-        String sql = "update order set price = ? where id = ?";
+        String sql = "update orders set price = ? where id = ?";
         PreparedStatement preparedStatement = null;
         try {
             //将sql语句传入,并用PreparedStatement 转义防止sql注入
@@ -405,10 +405,10 @@ public class DatabaseOperation {
 
             //将结果集的结果封装到类中
             while (resultSet.next()) {
-                int orderId = resultSet.getInt("id");
+                int Id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
-                double orderPrice = resultSet.getDouble("price");
-                goods.add(new Goods(orderId,name, orderPrice));
+                double Price = resultSet.getDouble("price");
+                goods.add(new Goods(Id,name, Price));
             }
             connection.commit();
             return goods;
@@ -476,7 +476,7 @@ public class DatabaseOperation {
         Connection connection = LinkDatabase.getConnection();
         //关闭自动提交
         connection.setAutoCommit(false);
-        String sql="select order_id,goods_id from order_details where id = ?";
+        String sql="select order_id,goods_id from order_details where order_id = ?";
         List<Order_details> od = new ArrayList<>();
         PreparedStatement preparedStatement = null;
         try {
@@ -560,7 +560,7 @@ public class DatabaseOperation {
 
         // 这里的sql语句可以直接拼接成最终的sql语句，也可以把参数用？占位符代替，等会再传入。
         String sql = "select sum(price) as price from goods ,\n" +
-                "    (select od.goods_id id from order_details as od , orders where od.order_id = orders.id and od.order_id =?) as oog\n" +
+                "    (select od.goods_id id from order_details as od where  od.order_id =?) as oog\n" +
                 "where oog.id = goods.id";
         PreparedStatement preparedStatement = null;
 
@@ -575,7 +575,7 @@ public class DatabaseOperation {
             while (resultSet.next()) {
                  sum = resultSet.getDouble("price");
             }
-
+//            System.out.println(sum);
             if(price==sum){
                 return true;
             }else{
